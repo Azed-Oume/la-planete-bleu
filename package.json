@@ -2,10 +2,10 @@
   "name": "first",
   "version": "1.0.0",
   "description": "my first template",
-  "souece": "/index.html",
+  "source": "src/index.html",
   "scripts": {
-    "start": "parcel"
-    
+    "start": "parcel",
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,8 @@
   "dependencies": {
     "parcel": "^2.8.3",
     "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3"
   }
 }

@@ -1,5 +1,5 @@
 .header{
-    background-image: url(./images/fond_clair.jpg);
+    background-image: url(../images/fond_clair.jpg);
     background-size: cover;
     background-position: center;
     border: none;
@@ -7,4 +7,38 @@
     width: 95%;
     height: 7rem;
     margin: 1rem auto;
+}
+.dropdown__content{
+    background-color: rgb(37, 217, 37);
+    color: white;
+    width: 8rem;
+    height: 2rem;
+    font-size: 1.4rem;
+    border: solid black 2px;
+    border-radius: 10px;
+    :hover{
+        color: rgb(37, 217, 37);
+        border: solid black 2px;
+        border-radius: 20px;
+        width: 7rem;
+        height: 7rem;
+        margin: 1rem auto;
+    }
+}
+.dropbtn{
+    background-color: rgb(37, 217, 37);
+    color: white;
+    width: 8rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    margin-bottom: .4rem;
+}
+.nav__a{
+    background-color: white;
+    color: rgb(37, 217, 37);
+}
+.nav__aa{
+    background-color: rgb(37, 217, 37);
+    color: white;
 }

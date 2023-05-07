@@ -1,17 +1,12 @@
-@use '_reset.scss';
+@use '../scss/reset';
 
-@use '_footer.scss';
-@use '_header.scss';
-@use '_main-section.scss';
-@use 'section-article.scss';
-@use '_aside.scss';
-@use '_mediaqueries.scss';
-@use '_form.scss';
-@use '_mon-compte.scss';
-@use '_mixin.scss';
-@use '_caroussel.scss';
-
-
-.body{
-    background-color: aliceblue;
-}
+@use '../scss/footer';
+@use '../scss/header';
+@use '../scss/main-section';
+@use '../scss/section-article';
+@use '../scss/aside';
+@use '../scss/mediaqueries';
+@use '../scss/form';
+@use '../scss/mon-compte';
+@use '../scss/mixin';
+@use '../scss/caroussel';

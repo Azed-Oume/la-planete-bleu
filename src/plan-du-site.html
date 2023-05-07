@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.scss">
+    <title>My Template Plan Du Site</title>
+</head>
+
+<body class="body">
+    <header role="banner" class="header">
+        <nav role="navigation" class="nav">
+            <div class="dropdown">
+                <button onclick="showdropdown()" class="dropbtn">Menu</button>
+                <select id="dropdown" style="display: none" class="dropdown__content" role="navigation"
+                    aria-label="menu principal">
+                    <option value="index.html" class="nav__a">Accueil</option>
+                    <option value="a-propos.html" class="nav__a">A Propos</option>
+                    <option value="nos-services.html" class="nav__a">Nos Services</option>
+                    <option value="les-promos.html" class="nav__a">Les Promos</option>
+                    <option value="mon-compte.html" class="nav__a"><i class="fa fa-solid fa-tree"
+                            style="color: rgb(25, 185, 25)"></i>Mon Compte</option>
+                    <option value="contact.html" class="nav__a"><i class="fa fa-envelope"
+                            style="color: rgb(25, 185, 25)"></i>Contact</option>
+                    <option value="plan-du-site.html" class="nav__a">Plan Du Site</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h2>Plan du site</h2>
+        <nav>
+            <ol>
+                <li><a href="./index.html">Accueil</a></li>
+                <li><a href="./a-propos.html">À propos</a></li>
+                <li><a href="./nos-services.html">Services</a>
+                    <ul>
+                        <li><a href="./nos-services.html">Service 1</a></li>
+                        <li><a href="./nos-services.html">Service 2</a></li>
+                        <li><a href="./nos-services.html">Service 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ol>
+        </nav>
+    </main>
+    <footer role="contentinfo" class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__nav__ul">
+                <li class="footer__nav__ul__li"><a href="#">facebook</a></li>
+                <li class="footer__nav__ul__li"><a href="#">tweeter</a></li>
+                <li class="footer__nav__ul__li"><a href="#">tiktok</a></li>
+                <li class="footer__nav__ul__li"><a href="#">linkedin</a></li>
+            </ul>
+        </nav>
+        <p>Copyright © Mon site web</p>
+    </footer>
+
+    <!-- Code pour rendre la page accessible -->
+    <!-- Utilisation des balises <h1> et <h2> pour les titres -->
+    <!-- Utilisation de couleurs et de contrastes appropriés pour un contenu lisible -->
+    <!-- Utilisation de l'attribut "alt" pour décrire les images -->
+    <!-- Utilisation de liens clairs et faciles à suivre pour la navigation -->
+    <!-- Utilisation d'étiquettes pour les formulaires -->
+
+</body>
+<script>
+    function showdropdown() {
+        var dropdown = document.getElementById("dropdown");
+        if (dropdown.style.display === "none") {
+            dropdown.style.display = "block";
+        } else {
+            dropdown.style.display = "none";
+        }
+    }
+
+    document.getElementById("dropdown").addEventListener("change", function () {
+        window.location.href = this.value;
+    });
+</script>
+
+</html>

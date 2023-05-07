@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,23 +9,27 @@
     <link rel="stylesheet" href="./scss/style.scss">
     <title>Contacter nous la planete et ce que l'on-y trouve</title>
 </head>
+
 <body class="body">
     <header role="banner" class="header">
         <nav role="navigation" class="nav">
             <div class="dropdown">
-              <button onclick="showdropdown()" class="dropbtn">Menu</button>
-              <select id="dropdown" style="display: none;" class="dropdown__content" role="navigation" aria-label="menu principal">
-                <option value="index.html" class="nav__a">Accueil</option>
-                <option value="a-propos.html" class="nav__a">A Propos</option>
-                <option value="nos-services.html" class="nav__a">Nos Services</option>
-                <option value="les-promos.html" class="nav__a">Les Promos</option>
-                <option value="mon-compte.html" class="nav__a"><i class="fa fa-solid fa-tree" style="color: rgb(25, 185, 25)"></i>Mon Compte</option>
-                <option value="contact.html" class="nav__a"><i class="fa fa-envelope" style="color: rgb(25, 185, 25)"></i>Contact</option>
-                <option value="plan-du-site.html" class="nav__a">Plan Du Site</option>
-              </select>
+                <button onclick="showdropdown()" class="dropbtn">Menu</button>
+                <select id="dropdown" style="display: none" class="dropdown__content" role="navigation"
+                    aria-label="menu principal">
+                    <option value="index.html" class="nav__a">Accueil</option>
+                    <option value="a-propos.html" class="nav__a">A Propos</option>
+                    <option value="nos-services.html" class="nav__a">Nos Services</option>
+                    <option value="les-promos.html" class="nav__a">Les Promos</option>
+                    <option value="mon-compte.html" class="nav__a"><i class="fa fa-solid fa-tree"
+                            style="color: rgb(25, 185, 25)"></i>Mon Compte</option>
+                    <option value="contact.html" class="nav__a"><i class="fa fa-envelope"
+                            style="color: rgb(25, 185, 25)"></i>Contact</option>
+                    <option value="plan-du-site.html" class="nav__a">Plan Du Site</option>
+                </select>
             </div>
-          </nav>          
-      </header>
+        </nav>
+    </header>
     <main role="main" class="main">
         <form class="formulaire" action="" method="post">
             <fieldset class="formulaire__encadrer">
@@ -32,124 +37,128 @@
                 <fieldset class="cadre__nom">
                     <label class="formulaire__encadrer__nom" for="nom">Nom :</label>
                     <input type="text" id="nom" name="nom" required><br>
-                
+
                     <label class="formulaire__encadrer__prenom" for="prenom">Prénom :</label>
                     <input type="text" id="prenom" name="prenom" required><br>
-                
+
                     <label class="formulaire__encadrer__email" for="email">Email :</label>
                     <input type="email" id="email" name="email" required><br>
-                
+
                     <label class="formulaire__encadrer__telephone" for="telephone">Téléphone :</label>
                     <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" required><br>
                 </fieldset>
                 <fieldset class="cadre__objet">
                     <label class="formulaire__encadrer__objet" for="objet">Objet :</label>
                     <input type="text" id="objet" name="objet" required><br>
-                
+
                     <label class="formulaire__encadrer__message" for="message">Message :</label>
                     <textarea id="message" name="message" required></textarea><br>
-                
-                    <label class="formulaire__encadrer__newsletter" for="newsletter">Inscription à la newsletter :</label>
+
+                    <label class="formulaire__encadrer__newsletter" for="newsletter">Inscription à la newsletter
+                        :</label>
                     <input type="checkbox" id="newsletter" name="newsletter" value="oui"><br>
-                
+
                     <label class="formulaire__encadrer__genre" for="genre">Genre :</label>
                     <select id="genre" name="genre">
-                    <option value="homme">Homme</option>
-                    <option value="femme">Femme</option>
-                    <option value="non-binaire">Non-binaire</option>
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                        <option value="non-binaire">Non-binaire</option>
                     </select><br>
                 </fieldset>
                 <fieldset class="cadre__pays">
                     <label class="formulaire__encadrer__pays" for="pays">Pays :</label>
                     <select id="pays" name="pays">
-                    <option value="france">France</option>
-                    <option value="canada">Canada</option>
-                    <option value="belgique">Belgique</option>
-                    <option value="suisse">Suisse</option>
+                        <option value="france">France</option>
+                        <option value="canada">Canada</option>
+                        <option value="belgique">Belgique</option>
+                        <option value="suisse">Suisse</option>
                     </select><br>
-                
+
                     <label class="formulaire__encadrer__ville" for="ville">Ville :</label>
                     <input type="text" id="ville" name="ville"><br>
-                
+
                     <label class="formulaire__encadrer__code-postal" for="code_postal">Code postal :</label>
                     <input type="text" id="code_postal" name="code_postal"><br>
-                
+
                     <label class="formulaire__encadrer__adresse" for="adresse">Adresse :</label>
                     <input type="text" id="adresse" name="adresse"><br>
                 </fieldset>
                 <fieldset class="cadre__sujet">
                     <label class="formulaire__encadrer__sujet" for="sujet">Sujet :</label>
                     <select id="sujet" name="sujet">
-                    <label for="text">dites nous un peu plus</label>
-                    <option value="demande_devis">Espaces Vert</option>
-                    <option value="informations_produit">La Montagne</option>
-                    <option value="probleme_technique">La Mer</option>
-                    <option value="autre">Autre</option>
-                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
+                        <label for="text">dites nous un peu plus</label>
+                        <option value="demande_devis">Espaces Vert</option>
+                        <option value="informations_produit">La Montagne</option>
+                        <option value="probleme_technique">La Mer</option>
+                        <option value="autre">Autre</option>
+                        <textarea name="text" id="text" cols="30" rows="10"></textarea>
                     </select><br>
                 </fieldset>
                 <fieldset class="cadre__date-de-naissance">
-                    <label class="formulaire__encadrer__date-de-naissance" for="date_naissance">Date de naissance :</label>
+                    <label class="formulaire__encadrer__date-de-naissance" for="date_naissance">Date de naissance
+                        :</label>
                     <input type="date" id="date_naissance" name="date_naissance"><br>
-                
-                    <label class="formulaire__encadrer__situation-familiale" for="situation_familiale">Situation familiale :</label>
+
+                    <label class="formulaire__encadrer__situation-familiale" for="situation_familiale">Situation
+                        familiale :</label>
                     <input type="text" id="situation_familiale" name="situation_familiale"><br>
-                
+
                     <label class="formulaire__encadrer__profession" for="profession">Profession :</label>
                     <input type="text" id="profession" name="profession"><br>
-                
+
                     <label class="formulaire__encadrer__entreprise" for="entreprise">Entreprise :</label>
                     <input type="text" id="entreprise" name="entreprise"><br>
                 </fieldset>
                 <fieldset class="cadre__site-web">
-                    
+
                     <label for="site_web">Site web :</label>
                     <input type="url" id="site_web" name="site_web"><br>
-                    
+
                     <label for="linkedin">Profil LinkedIn :</label>
                     <input type="url" id="linkedin" name="linkedin"><br>
-                    
+
                     <label for="twitter">Profil Twitter :</label>
                     <input type="url" id="twitter" name="twitter"><br>
-                    
+
                     <label for="facebook">Profil Facebook :</label>
                     <input type="url" id="facebook" name="facebook"><br>
-                    
+
                     <label for="instagram">Profil Instagram :</label>
                     <input type="url" id="instagram" name="instagram"><br>
-                    
+
                     <label for="github">Profil GitHub :</label>
                     <input type="url" id="github" name="github"><br>
-                    
+
                     <input type="submit" value="Envoyer">
                 </fieldset>
             </fieldset>
         </form>
     </main>
-        <footer role="contentinfo" class="footer">
-            <nav class="footer__nav">
-                <ul class="footer__nav__ul">
-                    <li class="footer__nav__ul__li"><a href="#">facebook</a></li>
-                    <li class="footer__nav__ul__li"><a href="#">tweeter</a></li>
-                    <li class="footer__nav__ul__li"><a href="#">tiktok</a></li>
-                    <li class="footer__nav__ul__li"><a href="#">linkedin</a></li>
-                </ul>
-            </nav>
-        </footer>
+    <footer role="contentinfo" class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__nav__ul">
+                <li class="footer__nav__ul__li"><a href="#">facebook</a></li>
+                <li class="footer__nav__ul__li"><a href="#">tweeter</a></li>
+                <li class="footer__nav__ul__li"><a href="#">tiktok</a></li>
+                <li class="footer__nav__ul__li"><a href="#">linkedin</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 <script>
     function showdropdown() {
-      var dropdown = document.getElementById("dropdown");
-      if (dropdown.style.display === "none") {
-        dropdown.style.display = "block";
-      } else {
-        dropdown.style.display = "none";
-      }
+        var dropdown = document.getElementById("dropdown");
+        if (dropdown.style.display === "none") {
+            dropdown.style.display = "block";
+        } else {
+            dropdown.style.display = "none";
+        }
     }
-    
-    document.getElementById("dropdown").addEventListener("change", function() {
-      window.location.href = this.value;
+
+    document.getElementById("dropdown").addEventListener("change", function () {
+        window.location.href = this.value;
     });
-    </script>
+</script>
+
 
 </html>

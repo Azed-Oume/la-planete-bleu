@@ -1,98 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./scss/style.scss">
-    <title>Mon Compte, la planete et ce que l'on-y trouve</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./scss/style.scss">
+  <title>Mon Compte, la planete et ce que l'on-y trouve</title>
 </head>
+
 <body class="body">
     <header role="banner" class="header">
       <nav role="navigation" class="nav">
-        <div class="dropdown">
-          <button onclick="showdropdown()" class="dropbtn">Menu</button>
-          <select id="dropdown" style="display: none;" class="dropdown__content" role="navigation" aria-label="menu principal">
-            <option value="index.html" class="nav__a">Accueil</option>
-            <option value="a-propos.html" class="nav__a">A Propos</option>
-            <option value="nos-services.html" class="nav__a">Nos Services</option>
-            <option value="les-promos.html" class="nav__a">Les Promos</option>
-            <option value="mon-compte.html" class="nav__a"><i class="fa fa-solid fa-tree" style="color: rgb(25, 185, 25)"></i>Mon Compte</option>
-            <option value="contact.html" class="nav__a"><i class="fa fa-envelope" style="color: rgb(25, 185, 25)"></i>Contact</option>
-            <option value="plan-du-site.html" class="nav__a">Plan Du Site</option>
-          </select>
-        </div>
-      </nav>      
-        <nav>
-          <ul>
-              <li><a href="./mon-compte/Compte.html">Accueil</a></li>
-              <li><a href="./mon-compte/profil.html">Profil</a></li>
-              <li><a href="./mon-compte/paramètres.html">Paramètres</a></li>
-              <li><a href="./mon-compte/déconnexion.html">Déconnexion</a></li>
-          </ul>
-        </nav>
-      </header>
-    <main role="main" class="main">
-      <h1>Mon compte</h1>
-      <section>
-        <h2>Informations de profil</h2>
-        <form>
-          <label for="nom">Nom :</label>
-          <input type="text" id="nom" name="nom" />
+          <div class="dropdown">
+              <button onclick="showdropdown()" class="dropbtn">Menu</button>
+              <select id="dropdown" style="display: none;" class="dropdown__content" role="navigation"
+                  aria-label="menu principal">
+                  <option value="index.html" class="nav__a">Accueil</option>
+                  <option value="a-propos.html" class="nav__a">A Propos</option>
+                  <option value="nos-services.html" class="nav__a">Nos Services</option>
+                  <option value="les-promos.html" class="nav__a">Les Promos</option>
+                  <option value="mon-compte.html" class="nav__a"><i class="fa fa-solid fa-tree"
+                          style="color: rgb(25, 185, 25)"></i>Mon Compte</option>
+                  <option value="contact.html" class="nav__a"><i class="fa fa-envelope"
+                          style="color: rgb(25, 185, 25)"></i>Contact</option>
+                  <option value="plan-du-site.html" class="nav__a">Plan Du Site</option>
+              </select>
+          </div>
+      </nav>
+    </header>
+    <header>
+    <nav>
+      <ul>
+        <li><a href="./mon-compte/Compte.html">Accueil</a></li>
+        <li><a href="./mon-compte/profil.html">Profil</a></li>
+        <li><a href="./mon-compte/paramètres.html">Paramètres</a></li>
+        <li><a href="./mon-compte/déconnexion.html">Déconnexion</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main role="main" class="main">
+    <h1>Mon compte</h1>
+    <section>
+      <h2>Informations de profil</h2>
+      <form>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" />
 
-          <label for="prenom">Prénom :</label>
-          <input type="text" id="prenom" name="prenom" />
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" />
 
-          <label for="email">E-mail :</label>
-          <input type="email" id="email" name="email" />
+        <label for="email">E-mail :</label>
+        <input type="email" id="email" name="email" />
 
-          <button type="submit">Mettre à jour</button>
-        </form>
-      </section>
-      <section>
-        <h2>Mes commandes</h2>
-        <ul>
-          <li>
-            <a href="#">Commande 1</a>
-          </li>
-          <li>
-            <a href="#">Commande 2</a>
-          </li>
-          <li>
-            <a href="#">Commande 3</a>
-          </li>
-        </ul>
-      </section>
-    </main>
-      <footer>
-        <p>&copy; 2023 Mon compte</p>
-      </footer>
-        <footer role="contentinfo" class="footer">
-            <nav class="footer__nav">
-                <ul class="footer__nav__ul">
-                    <li class="footer__nav__ul__li"><a href="#">facebook</a></li>
-                    <li class="footer__nav__ul__li"><a href="#">tweeter</a></li>
-                    <li class="footer__nav__ul__li"><a href="#">tiktok</a></li>
-                    <li class="footer__nav__ul__li"><a href="#">linkedin</a></li>
-                </ul>
-            </nav>
-        </footer>
-    
+        <button type="submit">Mettre à jour</button>
+      </form>
+    </section>
+    <section>
+      <h2>Mes commandes</h2>
+      <ul>
+        <li>
+          <a href="#">Commande 1</a>
+        </li>
+        <li>
+          <a href="#">Commande 2</a>
+        </li>
+        <li>
+          <a href="#">Commande 3</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 Mon compte</p>
+  </footer>
+  <footer role="contentinfo" class="footer">
+    <nav class="footer__nav">
+      <ul class="footer__nav__ul">
+        <li class="footer__nav__ul__li"><a href="#">facebook</a></li>
+        <li class="footer__nav__ul__li"><a href="#">tweeter</a></li>
+        <li class="footer__nav__ul__li"><a href="#">tiktok</a></li>
+        <li class="footer__nav__ul__li"><a href="#">linkedin</a></li>
+      </ul>
+    </nav>
+  </footer>
+
 </body>
 <script>
   function showdropdown() {
-    var dropdown = document.getElementById("dropdown");
-    if (dropdown.style.display === "none") {
-      dropdown.style.display = "block";
-    } else {
-      dropdown.style.display = "none";
-    }
+      var dropdown = document.getElementById("dropdown");
+      if (dropdown.style.display === "none") {
+          dropdown.style.display = "block";
+      } else {
+          dropdown.style.display = "none";
+      }
   }
-  
-  document.getElementById("dropdown").addEventListener("change", function() {
-    window.location.href = this.value;
+
+  document.getElementById("dropdown").addEventListener("change", function () {
+      window.location.href = this.value;
   });
-  </script>
+</script>
+
 
 </html>

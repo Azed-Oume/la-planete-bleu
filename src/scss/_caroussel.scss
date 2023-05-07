@@ -1,59 +1,61 @@
-    .caroussel
-    {
-    display: flex;
-    flex-direction: column;
-    border: gray solid 3px;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    margin: 0rem auto;
-
-    .image__la__mer{
-        border: gray solid 3px;
-        border-radius: 10px;
+.carousel {
+    position: relative;
+    width: 30%;
+    
+    margin: 0 auto;
+    overflow: hidden;
+  
+    .slides {
+      display: flex;
+      flex-wrap: nowrap;
+      transition: transform 0.5s ease;
+  
+      .slide {
+        width: 100%;
+        margin-right: 20px;
+        transition: opacity 0.5s ease;
+  
+        &.active {
+          opacity: 1;
         }
-        .image__la_montagne{
-        border: gray solid 3px;
-        border-radius: 10px;
+  
+        img {
+          width: 500px;
+          height: 400px;
         }
-        .image__la__vert{
-        border: gray solid 3px;
-        border-radius: 10px;
-        }
+      }
     }
-
-@media screen and (min-width:768px) and (max-width:1024px) {
-    .caroussel{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: .5rem auto;
-    margin: 1rem auto;
-    gap: 1rem;
-    width: 90%;}   
-}
-
-@media screen and (min-width:1225px) and (max-width:1440px) {
-    .caroussel{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin: .5rem auto;
-    }   
-    
-}
-
-
-@media screen and (min-width:1440px) {
-    .caroussel{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin: .5rem auto;
-    padding: 1rem auto;
-    gap: 1rem;
-    justify-content: space-around
-    }   
-    
-}
+  
+    .prev-button,
+    .next-button,
+    .stop-button {
+      position: absolute;
+      top: 95%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+  
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+    }
+  
+    .prev-button {
+      left: 0;
+    }
+  
+    .next-button {
+      right: 0;
+    }
+  
+    .stop-button {
+      right: 50%;
+      transform: translate(50%, -50%);
+    }
+  }
+  

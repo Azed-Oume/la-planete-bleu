@@ -1,0 +1,17 @@
+@use '_reset.scss';
+
+@use '_footer.scss';
+@use '_header.scss';
+@use '_main-section.scss';
+@use 'section-article.scss';
+@use '_aside.scss';
+@use '_mediaqueries.scss';
+@use '_form.scss';
+@use '_mon-compte.scss';
+@use '_mixin.scss';
+@use '_caroussel.scss';
+
+
+.body{
+    background-color: aliceblue;
+}

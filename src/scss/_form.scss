@@ -1,0 +1,30 @@
+.formulaire{
+    width: 90%;
+    background-color: grey;
+}
+.formulaire__encadrer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(180, 177, 177);
+    color: blue;
+    border: solid gray 4px;
+    border-radius: 10px;
+    margin: 0rem auto;
+    gap: 1rem;
+}
+.formulaire__encadrer__vos-infos{
+    font-size: 1.4rem;
+    background-color: rgb(180, 177, 177);
+    color: green;
+    font-weight: bold ;
+    text-transform: uppercase;
+    border: solid gray 4px;
+    border-radius: 10px;
+}
+input, textarea, #genre, #pays, #sujet {
+    background-color: rgb(238, 192, 132);
+}
+#newsletter{
+    background-color: rgb(238, 192, 132);
+    }

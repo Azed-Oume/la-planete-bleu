@@ -1,0 +1,25 @@
+@use 'mixin.scss';
+
+.footer{
+    background-image: url(./images/fond_clair.jpg);
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 20px;
+    width: 95%;
+    height: 7rem;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    &__text{
+        color: black;
+    }
+}
+
+.footer__nav__ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}

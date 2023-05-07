@@ -1,0 +1,83 @@
+.section{
+    background-color: antiquewhite;
+    border: solid gray 2px;
+    border-radius: 10px;
+    width:100%;
+    margin: .5rem auto;
+    padding: 1rem;
+    
+}
+
+.section__aside__esapaces-vert{
+    display: flex;
+    flex-direction: column;
+}
+    .section__aside__div__espaces-vert{
+        background-image: url(./images/fond_vet.jpg);
+        background-size: cover;
+        background-position: center;
+        border: solid gray 2px;
+        border-radius: 10px;
+        width: 90%;
+        height: 10rem;
+        margin: .5rem auto;
+        padding: .5rem;
+        
+    }
+
+    // ...........................................................................
+
+.section__aside__montagne{
+    display: flex;
+    flex-direction: column;
+}
+    .section__aside__div__montagne{
+        background-image: url(./images/La-montagne.jpg);
+        background-size: cover;
+        background-position: center;
+        border: solid gray 2px;
+        border-radius: 10px;
+        width: 90%;
+        height: 10rem;
+        margin: .5rem auto;
+        padding: .5rem;   
+    }
+    // .............................................................................
+
+.section__aside__mer{
+    display: flex;
+    flex-direction: column;
+}
+    .section__aside__div__mer{
+        background-image: url(./images/la-mer.jpg);
+        background-size: cover;
+        background-position: center;
+        border: solid gray 2px;
+        border-radius: 10px;
+        width: 90%;
+        height: 10rem;
+        margin: .5rem auto;   
+        padding: .5rem;
+        
+    }
+
+    
+    // ...............................................................................
+
+
+.section__aside__div__text{
+    background-color: burlywood;
+    border: solid gray 2px;
+    border-radius: 10px;
+    width: 90%;
+    margin: .5rem auto;
+    padding: .5rem;
+    font-size: 1.3rem;
+    
+}
+
+.section__aside__div__title{
+    text-align: center;
+    font-size: 1.8rem;
+
+}

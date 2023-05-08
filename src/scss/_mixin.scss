@@ -1,44 +1,44 @@
-@mixin style-cadre($display: flex, $flex-direction: column, $border: solid gray 4px, $border-radius: 10px)
-    {
-        display:$display;
-        flex-direction: $flex-direction;
-        border: $border;
-        border-radius: $border-radius;
-    }
-    .cadre__nom
-    {
-        @include style-cadre();
-        background-color: aqua;
+// @mixin style-cadre($display: flex, $flex-direction: column, $border: solid gray 4px, $border-radius: 10px)
+//     {
+//         display:$display;
+//         flex-direction: $flex-direction;
+//         border: $border;
+//         border-radius: $border-radius;
+//     }
+//     .cadre__nom
+//     {
+//         @include style-cadre();
+//         background-color: aqua;
         
-    }
+//     }
 
-    .cadre__objet
-    {
-        @include style-cadre();
-        background-color: aqua;
-    }
+//     .cadre__objet
+//     {
+//         @include style-cadre();
+//         background-color: aqua;
+//     }
 
-    .cadre__pays
-    {
-        @include style-cadre();
-        background-color: aqua;
-    }
+//     .cadre__pays
+//     {
+//         @include style-cadre();
+//         background-color: aqua;
+//     }
 
-    .cadre__sujet
-    {
-        @include style-cadre();
-        background-color: aqua;
-    }
+//     .cadre__sujet
+//     {
+//         @include style-cadre();
+//         background-color: aqua;
+//     }
 
-    .cadre__date-de-naissance
-    {
-        @include style-cadre();
-        background-color: aqua;
-    }
+//     .cadre__date-de-naissance
+//     {
+//         @include style-cadre();
+//         background-color: aqua;
+//     }
 
-    .cadre__site-web
-    {
-        @include style-cadre();
-        background-color: aqua;
-    }
+//     .cadre__site-web
+//     {
+//         @include style-cadre();
+//         background-color: aqua;
+//     }
     

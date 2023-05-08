@@ -12,22 +12,19 @@
 
 <body class="body">
     <header role="banner" class="header">
-        <nav role="navigation" class="nav">
-            <div>
-                <button onclick="showdropdown()" class="dropbtn">Menu</button>
-                <select id="dropdown" style="display: none" class="dropdown__content" role="navigation"
-                    aria-label="menu principal">
-                    <option value="index.html" class="nav__a">Accueil</option>
-                    <option value="a-propos.html" class="nav__aa">A Propos</option>
-                    <option value="nos-services.html" class="nav__a">Nos Services</option>
-                    <option value="les-promos.html" class="nav__aa">Les Promos</option>
-                    <option value="mon-compte.html" class="nav__a"><i class="fa fa-solid fa-tree"
-                            style="color: rgb(25, 185, 25)"></i>Mon Compte</option>
-                    <option value="contact.html" class="nav__aa"><i class="fa fa-envelope"
-                            style="color: rgb(25, 185, 25)"></i>Contact</option>
-                    <option value="plan-du-site.html" class="nav__a">Plan Du Site</option>
-                </select>
-            </div>
+        <nav role="navigation" class="dropdown">
+            <button class="dropdown-toggle">Menu</button>
+            <ul class="dropdown-menu" role="navigation" aria-label="menu principal">
+                <li class="nav__a"><a href="./index.html">Acceuil</a></li>
+                <li class="nav__aa"><a href="./a-propos.html">A Propos</a></li>
+                <li class="nav__a"><a href="./nos-services.html">Nos Services</a></li>
+                <li class="nav__aa"><a href="./les-promos.html">Les Promos</a></li>
+                <li class="nav__a"><i class="fa fa-solid fa-tree" style="color: rgb(25, 185, 25)"></i><a
+                        href="./mon-compte.html">Mon Compte</a></li>
+                <li class="nav__aa"><i class="fa fa-envelope" style="color: rgb(25, 185, 25)"></i><a
+                        href="./contact.html">Contact</a></li>
+                <li class="nav__a"> <a href="./plan-du-site.html">Plan Su Site</a></li>
+            </ul>
         </nav>
     </header>
     <main role="main" class="main">
@@ -38,12 +35,10 @@
                 </div>
             </div>
         </section>
-        <section class="section ">
-            <img src="https://laplanetebleue.com/media/pages/images/d26f0f41af-1650096947/caza_pour_la_planetebleue_1000.jpg"
-                class="sirene__bleu" width="900px">
-
-            <!-- srcset="https://laplanetebleue.com/media/pages/images/d26f0f41af-1650096947/caza-pour-la-planetebleue-1000-800x-q80.jpg 800w, https://laplanetebleue.com/media/pages/images/d26f0f41af-1650096947/caza-pour-la-planetebleue-1000-1024x-q80.jpg 1024w, https://laplanetebleue.com/media/pages/images/d26f0f41af-1650096947/caza-pour-la-planetebleue-1000-1440x-q80.jpg 1440w, https://laplanetebleue.com/media/pages/images/d26f0f41af-1650096947/caza-pour-la-planetebleue-1000-2048x-q80.jpg 2048w" -->
-
+        <section class="section">
+            <div class="section__img">
+                
+            </div>
             <p class="section__article__preambule">Avec sa volonté farouche d'exposer de nouvelles idées, de nouvelles
                 attitudes, de nouveaux concepts, des perspectives non encore établies, La Planète Bleue se démarque
                 radicalement de tout ce qui se fait à la radio. Mondiale et futuriste, insoumise, non-alignée,
@@ -60,27 +55,27 @@
                 dans le monde. Elle est écoutée dans 100 pays.</p>
             <article class="section__article">
                 <aside class="section__aside__espaces-vert">
-                    <div class="section__aside__div__espaces-vert">
+                    <div class="section__aside__espaces-vert__img">
                         <h2 class="section__aside__div__title">les espaces verts</h2>
                     </div>
-                    <p class="section__aside__div__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                    <p class="section__aside__text__div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
                         quam ut voluptates ad adipisci consectetur nulla blanditiis dolorum, exercitationem obcaecati
                         aliquam quod deleniti quos similique?</p>
                 </aside>
 
                 <aside class="section__aside__montagne">
-                    <div class="section__aside__div__montagne">
+                    <div class="section__aside__montagne__img">
                         <h2 class="section__aside__div__title">les montagnes</h2>
                     </div>
-                    <p class="section__aside__div__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                    <p class="section__aside__text__div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
                         quam ut voluptates ad adipisci consectetur nulla blanditiis dolorum, exercitationem obcaecati
                         aliquam quod deleniti quos similique?</p>
                 </aside>
                 <aside class="section__aside__mer">
-                    <div class="section__aside__div__mer">
+                    <div class="section__aside__mer__img">
                         <h2 class="section__aside__div__title">les mer et les Oceans</h2>
                     </div>
-                    <p class="section__aside__div__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+                    <p class="section__aside__text__div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
                         quam ut voluptates ad adipisci consectetur nulla blanditiis dolorum, exercitationem obcaecati
                         aliquam quod deleniti quos similique?</p>
                 </aside>
@@ -88,25 +83,25 @@
             <article>
                 <div class="carousel">
                     <div class="slides">
-                      <div class="slide active">
-                        <img src="../src/images/la-mer.jpg" alt="Slide ">
-                      </div>
-                      <div class="slide">
-                        <img src="../src/images/fond_vet.jpg" alt="Slide ">
-                      </div>
-                      <div class="slide active">
-                        <img src="../src/images/la-mer.jpg" alt="Slide ">
-                      </div>
-                      <div class="slide">
-                        <img src="../src/images/La-montagne.jpg" alt="Slide ">
-                      </div>
-                      
+                        <div class="slide active">
+                            <img src="../src/images/la-mer.jpg" alt="Slide ">
+                        </div>
+                        <div class="slide active">
+                            <img src="../src/images/fond_vet.jpg" alt="Slide ">
+                        </div>
+                        <div class="slide active">
+                            <img src="../src/images/la-mer.jpg" alt="Slide ">
+                        </div>
+                        <div class="slide active">
+                            <img src="../src/images/La-montagne.jpg" alt="Slide ">
+                        </div>
+
                     </div>
                     <button class="prev-button">Prev</button>
                     <button class="next-button">Next</button>
                     <button class="stop-button">Stop</button>
-                  </div>
-                  
+                </div>
+
 
             </article>
         </section>
@@ -142,48 +137,49 @@
 </script>
 <script>
     const carousel = document.querySelector('.carousel');
-const slides = carousel.querySelector('.slides');
-const prevButton = carousel.querySelector('.prev-button');
-const nextButton = carousel.querySelector('.next-button');
-const stopButton = carousel.querySelector('.stop-button');
-const slideWidth = carousel.querySelector('.slide').clientWidth;
-let currentIndex = 0;
-let intervalId;
+    const slides = carousel.querySelector('.slides');
+    const prevButton = carousel.querySelector('.prev-button');
+    const nextButton = carousel.querySelector('.next-button');
+    const stopButton = carousel.querySelector('.stop-button');
+    const slideWidth = carousel.querySelector('.slide').clientWidth;
+    let currentIndex = 0;
+    let intervalId;
 
-function goToSlide(index) {
-  slides.style.transform = `translateX(-${index * slideWidth}px)`;
-  currentIndex = index;
-}
+    function goToSlide(index) {
+        slides.style.transform = `translateX(-${index * slideWidth}px)`;
+        currentIndex = index;
+    }
 
-function goToNextSlide() {
-  if (currentIndex === slides.children.length - 1) {
-    goToSlide(0);
-  } else {
-    goToSlide(currentIndex + 1);
-  }
-}
+    function goToNextSlide() {
+        if (currentIndex === slides.children.length - 1) {
+            goToSlide(0);
+        } else {
+            goToSlide(currentIndex + 1);
+        }
+    }
 
-function goToPrevSlide() {
-  if (currentIndex === 0) {
-    goToSlide(slides.children.length - 1);
-  } else {
-    goToSlide(currentIndex - 1);
-  }
-}
+    function goToPrevSlide() {
+        if (currentIndex === 0) {
+            goToSlide(slides.children.length - 1);
+        } else {
+            goToSlide(currentIndex - 1);
+        }
+    }
 
-function stopCarousel() {
-  clearInterval(intervalId);
-}
+    function stopCarousel() {
+        clearInterval(intervalId);
+    }
 
-function startCarousel() {
-  intervalId = setInterval(goToNextSlide, 3000);
-}
+    function startCarousel() {
+        intervalId = setInterval(goToNextSlide, 3000);
+    }
 
-startCarousel();
+    startCarousel();
 
-prevButton.addEventListener('click', goToPrevSlide);
-nextButton.addEventListener('click', goToNextSlide);
-stopButton.addEventListener('click', stopCarousel);
+    prevButton.addEventListener('click', goToPrevSlide);
+    nextButton.addEventListener('click', goToNextSlide);
+    stopButton.addEventListener('click', stopCarousel);
 
 </script>
+
 </html>

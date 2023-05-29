@@ -14,15 +14,13 @@
     <header role="banner" class="header">
         <nav role="navigation" class="dropdown">
             <button class="dropdown-toggle">Menu</button>
-            <ul class="dropdown-menu" role="navigation" aria-label="menu principal">
+            <ul class="dropdown-menu" aria-label="menu principal">
                 <li class="nav__a"><a href="./index.html">Acceuil</a></li>
                 <li class="nav__aa"><a href="./a-propos.html">A Propos</a></li>
                 <li class="nav__a"><a href="./nos-services.html">Nos Services</a></li>
                 <li class="nav__aa"><a href="./les-promos.html">Les Promos</a></li>
-                <li class="nav__a"><i class="fa fa-solid fa-tree" style="color: rgb(25, 185, 25)"></i><a
-                        href="./mon-compte.html">Mon Compte</a></li>
-                <li class="nav__aa"><i class="fa fa-envelope" style="color: rgb(25, 185, 25)"></i><a
-                        href="./contact.html">Contact</a></li>
+                <li class="nav__a"><a href="./mon-compte.html"><i class="fa fa-solid fa-tree"></i>Mon Compte</a></li>
+                <li class="nav__aa"><a href="./contact.html"><i class="fa fa-envelope"></i>Contact</a></li>
                 <li class="nav__a"> <a href="./plan-du-site.html">Plan Su Site</a></li>
             </ul>
         </nav>
@@ -83,13 +81,13 @@
                 <fieldset class="cadre__sujet">
                     <label class="formulaire__encadrer__sujet" for="sujet">Sujet :</label>
                     <select id="sujet" name="sujet">
-                        <label for="text">dites nous un peu plus</label>
                         <option value="demande_devis">Espaces Vert</option>
                         <option value="informations_produit">La Montagne</option>
                         <option value="probleme_technique">La Mer</option>
                         <option value="autre">Autre</option>
-                        <textarea name="text" id="text" cols="30" rows="10"></textarea>
                     </select><br>
+                    <label for="text">dites nous en un peu plus !</label><br>
+                    <textarea name="text" id="text" cols="30" rows="10"></textarea>
                 </fieldset>
                 <fieldset class="cadre__date-de-naissance">
                     <label class="formulaire__encadrer__date-de-naissance" for="date_naissance">Date de naissance

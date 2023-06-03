@@ -7,95 +7,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="./scss/style.scss">
+  <script src="./js/loupe.js" defer="true"></script>
   <title>Mon Compte, la planete et ce que l'on-y trouve</title>
 </head>
 
 <body class="body">
-  <header role="banner" class="header">
-    <nav role="navigation" class="dropdown">
-        <button class="dropdown-toggle">Menu</button>
-        <ul class="dropdown-menu" aria-label="menu principal">
-            <li class="nav__a"><a href="./index.html">Acceuil</a></li>
-            <li class="nav__aa"><a href="./a-propos.html">A Propos</a></li>
-            <li class="nav__a"><a href="./nos-services.html">Nos Services</a></li>
-            <li class="nav__aa"><a href="./les-promos.html">Les Promos</a></li>
-            <li class="nav__a"><a href="./mon-compte.html"><i class="fa fa-solid fa-tree"></i>Mon Compte</a></li>
-            <li class="nav__aa"><a href="./contact.html"><i class="fa fa-envelope"></i>Contact</a></li>
-            <li class="nav__a"> <a href="./plan-du-site.html">Plan Su Site</a></li>
-        </ul>
-    </nav>
-</header>
-    <header>
+  <header>
     <nav>
       <ul>
-        <li><a href="./mon-compte/Compte.html">Accueil</a></li>
-        <li><a href="./mon-compte/profil.html">Profil</a></li>
-        <li><a href="./mon-compte/paramètres.html">Paramètres</a></li>
-        <li><a href="./mon-compte/déconnexion.html">Déconnexion</a></li>
+        <li><a href="./index.html"><button>Retour page d'Acceuil</button></a></li>
       </ul>
     </nav>
   </header>
-  <main role="main" class="main">
-    <h1>Mon compte</h1>
-    <section>
-      <h2>Informations de profil</h2>
-      <form>
-        <label for="nom">Nom :</label>
-        <input type="text" id="nom" name="nom" />
+  <main role="main" class="main__count">
+    <h1 class="title__count">Mon compte</h1>
+    <div class="connected">
+      <div class="mycount">
+        <button type="submit" class="connection__a">J'ai un compte .</button>
+        <section class="section__count">
+          <h2 class="subtitle__count">Je me connécte .</h2>
+          <form class="forms__count">
+            <label for="mail">E-mail :</label>
+            <input type="email" id="mail" name="mail" />
 
-        <label for="prenom">Prénom :</label>
-        <input type="text" id="prenom" name="prenom" />
+            <label for="password">Mot de Passe</label>
+            <input type="current-password" name="password" id="password">
 
-        <label for="email">E-mail :</label>
-        <input type="email" id="email" name="email" />
+            <button type="submit"><a href="./abonner/compte.html">Connéxion</a></button>
+          </form>
+        </section>
+      </div>
+      <div class="count">
+        <button type="submit" class="connection__b">Je n'ai pas de compte !</button>
+        <section class="section__creatcount">
+          <h2 class="subtitle__count">Je crée mon compte !</h2>
+          <form class="forms__count">
+            <label for="name2">Nom :</label>
+            <input type="text" id="name2" name="name2" />
 
-        <button type="submit">Mettre à jour</button>
-      </form>
-    </section>
-    <section>
-      <h2>Mes commandes</h2>
-      <ul>
-        <li>
-          <a href="#">Commande 1</a>
-        </li>
-        <li>
-          <a href="#">Commande 2</a>
-        </li>
-        <li>
-          <a href="#">Commande 3</a>
-        </li>
-      </ul>
-    </section>
+            <label for="lastname2">Prénom :</label>
+            <input type="text" id="lastname2" name="lastname2" />
+
+            <label for="mail2">E-mail :</label>
+            <input type="email" id="mail2" name="mail2" />
+
+            <label for="password2">Mot de Passe</label>
+            <input type="current-password" name="password2" id="password2">
+
+            <button type="submit"><a href="./abonner/compte.html">Créer mon compte</a></button>
+          </form>
+        </section>
+      </div>
+    </div>
   </main>
-  <footer>
-    <p>&copy; 2023 Mon compte</p>
-  </footer>
-  <footer role="contentinfo" class="footer">
-    <nav class="footer__nav">
-      <ul class="footer__nav__ul">
-        <li class="footer__nav__ul__li"><a href="#">facebook</a></li>
-        <li class="footer__nav__ul__li"><a href="#">tweeter</a></li>
-        <li class="footer__nav__ul__li"><a href="#">tiktok</a></li>
-        <li class="footer__nav__ul__li"><a href="#">linkedin</a></li>
-      </ul>
-    </nav>
-  </footer>
+
+  <div>
+    <footer class="footer__count">
+      <nav class="footer__nav">
+        <ul class="footer__nav__ul">
+          <li class="footer__nav__ul__li"><a href="#">facebook</a></li>
+          <li class="footer__nav__ul__li"><a href="#">tweeter</a></li>
+          <li class="footer__nav__ul__li"><a href="#">tiktok</a></li>
+          <li class="footer__nav__ul__li"><a href="#">linkedin</a></li>
+        </ul>
+      </nav>
+      <p>&copy; 2023 Mon compte</p>
+    </footer>
+  </div>
 
 </body>
-<script>
-  function showdropdown() {
-      var dropdown = document.getElementById("dropdown");
-      if (dropdown.style.display === "none") {
-          dropdown.style.display = "block";
-      } else {
-          dropdown.style.display = "none";
-      }
-  }
-
-  document.getElementById("dropdown").addEventListener("change", function () {
-      window.location.href = this.value;
-  });
-</script>
-
 
 </html>

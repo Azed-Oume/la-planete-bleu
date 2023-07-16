@@ -1,44 +1,59 @@
-// @mixin style-cadre($display: flex, $flex-direction: column, $border: solid gray 4px, $border-radius: 10px)
-//     {
-//         display:$display;
-//         flex-direction: $flex-direction;
-//         border: $border;
-//         border-radius: $border-radius;
-//     }
-//     .cadre__nom
-//     {
-//         @include style-cadre();
-//         background-color: aqua;
-        
-//     }
+@mixin style-cadre($display: flex, $flex-direction: column, $border: solid gray 4px, $border-radius: 10px)
+    {
+        display:$display;
+        flex-direction: $flex-direction;
+        border: $border;
+        border-radius: $border-radius;
+    }
+    .cadre__nom,
+    .cadre__objet,
+    .cadre__pays,
+    .cadre__sujet,
+    .cadre__date-de-naissance,
+    .cadre__site-web
+    {
+        @include style-cadre();
+        background-color: rgb(216, 212, 212);        
+    }
+/* Styles pour les petits écrans */
+@media screen and (max-width: 480px) {
+    .formulaire__encadrer__vos__infos,
+    .cadre__nom,
+    .cadre__objet,
+    .cadre__pays,
+    .cadre__sujet,
+    .cadre__date-de-naissance,
+    .cadre__site-web
+    {
+      width: 90%;
+    }
+    body{
+        background: black;
+    }
+  }
+  
+  @media screen and (min-width: 480px) and (max-width:1200px) {
+    .formulaire__encadrer__vos__infos,
+    .cadre__nom,
+    .cadre__objet,
+    .cadre__pays,
+    .cadre__sujet,
+    .cadre__date-de-naissance,
+    .cadre__site-web
+    {
+      width: 60%;
+    }
+  }
 
-//     .cadre__objet
-//     {
-//         @include style-cadre();
-//         background-color: aqua;
-//     }
-
-//     .cadre__pays
-//     {
-//         @include style-cadre();
-//         background-color: aqua;
-//     }
-
-//     .cadre__sujet
-//     {
-//         @include style-cadre();
-//         background-color: aqua;
-//     }
-
-//     .cadre__date-de-naissance
-//     {
-//         @include style-cadre();
-//         background-color: aqua;
-//     }
-
-//     .cadre__site-web
-//     {
-//         @include style-cadre();
-//         background-color: aqua;
-//     }
-    
+  @media screen and (min-width: 1210px) {
+    .formulaire__encadrer__vos__infos,
+    .cadre__nom,
+    .cadre__objet,
+    .cadre__pays,
+    .cadre__sujet,
+    .cadre__date-de-naissance,
+    .cadre__site-web
+    {
+      width: 60%;
+    }
+  }

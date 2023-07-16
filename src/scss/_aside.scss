@@ -5,7 +5,7 @@
     border-radius: 10px;
     margin: .5rem auto;
     padding: 1rem 1rem;
-    width: 100%;
+    width: 90%;
 }
 
 .section__aside__espaces-vert{
@@ -74,7 +74,7 @@
 
 
     .section__aside__text__div{
-    background-color: burlywood;
+    background-color: rgb(227, 218, 205);
     border: solid gray 2px;
     border-radius: 10px;
     width: 90%;
@@ -84,8 +84,22 @@
     
 }
 
-.section__aside__div__title{
+.section__aside__div__titleone{
+    background-color: rgb(227, 223, 223) ;
+    width: 90%;
+    border: solid rgb(84, 77, 77) 1px;
+    border-radius: 5px;
     text-align: center;
     font-size: 1.8rem;
+    margin: 0rem auto;
+}
+
+.section__aside__div__title{
+    background-color: rgb(227, 223, 223) ;
+    width: 90%;
+    border: solid rgb(84, 77, 77) 1px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.4rem;
     margin: 0rem auto;
 }

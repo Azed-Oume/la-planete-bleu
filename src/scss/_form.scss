@@ -1,23 +1,21 @@
-.formulaire{
-    width: 90%;
-    background-color: grey;
-    margin: 0 auto;
-}
-.formulaire__encadrer{
+.cadre__nom,
+.cadre__objet,
+.cadre__pays,
+.cadre__sujet,
+.cadre__date-de-naissance,
+.cadre__site-web{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    background-color: rgb(180, 177, 177);
-    color: blue;
-    border: solid gray 4px;
-    border-radius: 10px;
-    margin: 0rem auto;
-    gap: 1rem;
+    align-items: center;
+    margin: 0 auto;
 }
+
 .formulaire__encadrer__vos-infos{
     font-size: 1.4rem;
-    background-color: rgb(180, 177, 177);
-    color: green;
+    background-color: rgb(216, 212, 212);
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(12, 157, 12);
     font-weight: bold ;
     text-transform: uppercase;
     border: solid gray 4px;

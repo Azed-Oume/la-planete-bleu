@@ -1,18 +1,28 @@
 {
   "name": "first",
   "version": "1.0.0",
-  "description": "my first template",
-  "source": "src/index.html",
+  "description": "Cette planete qui prends soin de nous !",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "parcel",
+    "dev": "node-dev index --clear --notify=false",
+    "start": "node index",
+    "initdb": "node init-db",
     "build": "parcel build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "node-dev": "^8.0.0",
     "parcel": "^2.8.3",
-    "save-dev": "^0.0.1-security"
+    "pg": "^8.11.1",
+    "pg-hstore": "^2.3.4",
+    "save-dev": "^0.0.1-security",
+    "sequelize": "^6.32.1"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3"

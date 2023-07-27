@@ -1,0 +1,598 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.cadre__nom,
+.cadre__objet,
+.cadre__pays,
+.cadre__sujet,
+.cadre__date-de-naissance,
+.cadre__site-web {
+  display: flex;
+  flex-direction: column;
+  border: solid gray 4px;
+  border-radius: 10px;
+  background-color: rgb(216, 212, 212);
+}
+
+/* Styles pour les petits écrans */
+@media screen and (max-width: 480px) {
+  .formulaire__encadrer__vos__infos,
+  .cadre__nom,
+  .cadre__objet,
+  .cadre__pays,
+  .cadre__sujet,
+  .cadre__date-de-naissance,
+  .cadre__site-web {
+    width: 90%;
+  }
+  body {
+    background: black;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .formulaire__encadrer__vos__infos,
+  .cadre__nom,
+  .cadre__objet,
+  .cadre__pays,
+  .cadre__sujet,
+  .cadre__date-de-naissance,
+  .cadre__site-web {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1210px) {
+  .formulaire__encadrer__vos__infos,
+  .cadre__nom,
+  .cadre__objet,
+  .cadre__pays,
+  .cadre__sujet,
+  .cadre__date-de-naissance,
+  .cadre__site-web {
+    width: 60%;
+  }
+}
+.footer {
+  background-image: url(../images/fond_clair.jpg);
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 20px;
+  width: 95%;
+  height: 7rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.footer__text {
+  color: black;
+}
+
+.footer__nav__ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.header {
+  background-image: url(../images/fond_clair.jpg);
+  background-size: cover;
+  background-position: center;
+  border: none;
+  border-radius: 20px;
+  width: 95%;
+  height: 7rem;
+  margin: 1rem auto;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color: green;
+  color: white;
+  width: 14rem;
+  height: 5rem;
+  font-size: 1.4rem;
+  border: solid white 4px;
+  border-radius: 10px;
+}
+
+.dropdown-toggle {
+  background-color: green;
+  color: white;
+  border: solid white 4px;
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  width: 8rem;
+  height: 3rem;
+  margin: 1rem 2.75rem 1rem 2.75rem;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  background-color: rgb(222, 217, 217);
+  width: 10rem;
+  height: 2rem;
+  border: solid black 2px;
+  border-radius: 10px;
+  margin: 1rem auto;
+  color: black;
+  font-size: 1rem;
+  text-align: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+}
+
+.div__section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.div__section__banierre {
+  background-image: url(../images/la-planete.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  color: aqua;
+  text-align: center;
+}
+.div__section h1 {
+  font-size: 3rem;
+}
+
+.section {
+  background-color: rgb(248, 230, 224);
+  border: solid gray 2px;
+  border-radius: 10px;
+  width: 95%;
+  margin: 0rem auto;
+  padding: 1rem 1rem 1rem 1rem;
+  width: 95%;
+}
+
+.section__img {
+  background-image: url(https://laplanetebleue.com/media/pages/images/d26f0f41af-1650096947/caza_pour_la_planetebleue_1000.jpg);
+}
+
+.section__article__preambule {
+  background-color: rgb(248, 230, 224);
+  border: solid black 2px;
+  border-radius: 10px;
+  margin: 0.5rem auto;
+  padding: 1rem 1rem;
+  width: 90%;
+}
+
+.section__aside__espaces-vert {
+  background-color: rgb(251, 213, 201);
+  display: flex;
+  flex-direction: column;
+  border: solid gray 2px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.section__aside__espaces-vert__img {
+  background-image: url(../images/fond_vet.jpg);
+  background-size: cover;
+  background-position: center;
+  border: solid gray 2px;
+  border-radius: 10px;
+  width: 90%;
+  height: 10rem;
+  margin: 0.5rem auto;
+}
+
+.section__aside__montagne {
+  background-color: rgb(251, 213, 201);
+  display: flex;
+  flex-direction: column;
+  border: solid gray 2px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.section__aside__montagne__img {
+  background-image: url(../images/La-montagne.jpg);
+  background-size: cover;
+  background-position: center;
+  border: solid gray 2px;
+  border-radius: 10px;
+  width: 90%;
+  height: 10rem;
+  margin: 0.5rem auto;
+}
+
+.section__aside__mer {
+  background-color: rgb(251, 213, 201);
+  display: flex;
+  flex-direction: column;
+  border: solid gray 2px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.section__aside__mer__img {
+  background-image: url(../images/la-mer.jpg);
+  background-size: cover;
+  background-position: center;
+  border: solid gray 2px;
+  border-radius: 10px;
+  width: 90%;
+  height: 10rem;
+  margin: 0.5rem auto;
+}
+
+.section__aside__text__div {
+  background-color: rgb(227, 218, 205);
+  border: solid gray 2px;
+  border-radius: 10px;
+  width: 90%;
+  margin: 0.5rem auto;
+  padding: 1rem 1rem;
+  font-size: 1.3rem;
+}
+
+.section__aside__div__titleone {
+  background-color: rgb(227, 223, 223);
+  width: 90%;
+  border: solid rgb(84, 77, 77) 1px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.8rem;
+  margin: 0rem auto;
+}
+
+.section__aside__div__title {
+  background-color: rgb(227, 223, 223);
+  width: 90%;
+  border: solid rgb(84, 77, 77) 1px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 0rem auto;
+}
+
+.cadre__nom,
+.cadre__objet,
+.cadre__pays,
+.cadre__sujet,
+.cadre__date-de-naissance,
+.cadre__site-web {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.formulaire__encadrer__vos-infos {
+  font-size: 1.4rem;
+  background-color: rgb(216, 212, 212);
+  text-align: center;
+  margin: 0 auto;
+  color: rgb(12, 157, 12);
+  font-weight: bold;
+  text-transform: uppercase;
+  border: solid gray 4px;
+  border-radius: 10px;
+}
+
+input, textarea, #genre, #pays, #sujet {
+  background-color: rgb(238, 192, 132);
+}
+
+#newsletter {
+  background-color: rgb(238, 192, 132);
+}
+
+/* Reset styles */
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+p,
+form,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+}
+
+header nav ul {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  margin: 0rem auto;
+  padding: 0rem;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+header nav ul li {
+  margin-right: 10px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main__count {
+  max-width: 100%;
+  background-color: rgb(229, 224, 224);
+  margin: 0 0.5rem;
+  padding: 20px;
+}
+.main__count .connected {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.main__count .mycount,
+.main__count .count {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+}
+.main__count .connection__a,
+.main__count .connection__b {
+  background-color: rgb(229, 224, 224);
+  color: black;
+  width: 13rem;
+  height: 2rem;
+  border-radius: 0.3rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.main__count .title__count {
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2rem;
+}
+.main__count .section__count,
+.main__count .section__creatcount {
+  background-color: #cac9c9;
+  margin: 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem;
+  width: 60%;
+  border-radius: 1rem;
+  display: none;
+}
+.main__count .section__count .subtitle__count,
+.main__count .section__creatcount .subtitle__count {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.main__count .section__count .forms__count label,
+.main__count .section__creatcount .forms__count label {
+  display: block;
+  margin-bottom: 10px;
+}
+.main__count .section__count .forms__count input,
+.main__count .section__creatcount .forms__count input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.main__count .section__count .forms__count button,
+.main__count .section__creatcount .forms__count button {
+  background-color: #b6b1b1;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 0.5rem;
+}
+.main__count .section__count ul,
+.main__count .section__creatcount ul {
+  list-style: none;
+  gap: 1rem;
+}
+.main__count .section__count ul li,
+.main__count .section__creatcount ul li {
+  margin-bottom: 10px;
+}
+.main__count .section__count ul li a,
+.main__count .section__creatcount ul li a {
+  display: block;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+}
+
+.footer__count {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+.footer__count p {
+  margin: 0;
+}
+.footer__count a {
+  color: white;
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.carousel .slides {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  transition: transform 1s ease;
+}
+
+.carousel .slides .slide {
+  border: solid black 1px;
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.carousel .prev-button,
+.carousel .next-button,
+.carousel .stop-button {
+  top: 95%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.carousel .prev-button:hover,
+.carousel .next-button:hover,
+.carousel .stop-button:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.carousel .prev-button {
+  left: 0;
+}
+
+.carousel .next-button {
+  right: 0;
+}
+
+.carousel .stop-button {
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1439px) {
+  .carousel .slides {
+    gap: 3rem;
+  }
+  .carousel .slides .slide {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .carousel .slides .slide img {
+    width: 600px;
+    height: 400px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .carousel {
+    width: 60%;
+  }
+  .carousel .slides {
+    gap: 3rem;
+  }
+  .carousel .slides .slide {
+    width: 90%;
+    margin: 2rem auto;
+  }
+  .carousel .slides .slide img {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

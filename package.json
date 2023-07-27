@@ -8,7 +8,8 @@
     "dev": "node-dev index --clear --notify=false",
     "start": "node index",
     "initdb": "node init-db",
-    "build": "parcel build"
+    "build": "parcel build",
+    "scss": "sass public/scss/style.scss public/styles/style.css"
   },
   "keywords": [],
   "author": "",
@@ -18,11 +19,13 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "node-dev": "^8.0.0",
-    "parcel": "^2.8.3",
+    "parcel": "^2.9.3",
     "pg": "^8.11.1",
     "pg-hstore": "^2.3.4",
+    "sass": "^1.64.1",
     "save-dev": "^0.0.1-security",
-    "sequelize": "^6.32.1"
+    "sequelize": "^6.32.1",
+    "swiper": "^10.0.4"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.8.3"

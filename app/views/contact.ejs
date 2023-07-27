@@ -1,0 +1,108 @@
+<%- include('partials/header') %>
+
+<main role="main" class="main">
+    <form class="formulaire" action="" method="post">
+        <fieldset class="formulaire__encadrer">
+            <legend class="formulaire__encadrer__vos-infos">saisir vos informations</legend>
+            <fieldset class="cadre__nom">
+                <label class="formulaire__encadrer__nom label" for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" required><br>
+
+                <label class="formulaire__encadrer__prenom label" for="prenom">Prénom :</label>
+                <input type="text" id="prenom" name="prenom" required><br>
+
+                <label class="formulaire__encadrer__email label" for="email">Email :</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label class="formulaire__encadrer__telephone label" for="telephone">Téléphone :</label>
+                <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" required><br>
+            </fieldset>
+            <fieldset class="cadre__objet">
+                <label class="formulaire__encadrer__objet" for="objet">Objet :</label>
+                <input type="text" id="objet" name="objet" required><br>
+
+                <label class="formulaire__encadrer__message" for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea><br>
+
+                <label class="formulaire__encadrer__newsletter" for="newsletter">Inscription à la newsletter
+                    :</label>
+                <input type="checkbox" id="newsletter" name="newsletter" value="oui"><br>
+
+                <label class="formulaire__encadrer__genre" for="genre">Genre :</label>
+                <select id="genre" name="genre">
+                    <option value="homme">Homme</option>
+                    <option value="femme">Femme</option>
+                    <option value="non-binaire">Non-binaire</option>
+                </select><br>
+            </fieldset>
+            <fieldset class="cadre__pays">
+                <label class="formulaire__encadrer__pays" for="pays">Pays :</label>
+                <select id="pays" name="pays">
+                    <option value="france">France</option>
+                    <option value="canada">Canada</option>
+                    <option value="belgique">Belgique</option>
+                    <option value="suisse">Suisse</option>
+                </select><br>
+
+                <label class="formulaire__encadrer__ville" for="ville">Ville :</label>
+                <input type="text" id="ville" name="ville"><br>
+
+                <label class="formulaire__encadrer__code-postal" for="code_postal">Code postal :</label>
+                <input type="text" id="code_postal" name="code_postal"><br>
+
+                <label class="formulaire__encadrer__adresse" for="adresse">Adresse :</label>
+                <input type="text" id="adresse" name="adresse"><br>
+            </fieldset>
+            <fieldset class="cadre__sujet">
+                <label class="formulaire__encadrer__sujet" for="sujet">Sujet :</label>
+                <select id="sujet" name="sujet">
+                    <option value="demande_devis">Espaces Vert</option>
+                    <option value="informations_produit">La Montagne</option>
+                    <option value="probleme_technique">La Mer</option>
+                    <option value="autre">Autre</option>
+                </select><br>
+                <label for="text">dites nous en un peu plus !</label><br>
+                <textarea name="text" id="text" cols="30" rows="10"></textarea>
+            </fieldset>
+            <fieldset class="cadre__date-de-naissance">
+                <label class="formulaire__encadrer__date-de-naissance" for="date_naissance">Date de naissance
+                    :</label>
+                <input type="date" id="date_naissance" name="date_naissance"><br>
+
+                <label class="formulaire__encadrer__situation-familiale" for="situation_familiale">Situation
+                    familiale :</label>
+                <input type="text" id="situation_familiale" name="situation_familiale"><br>
+
+                <label class="formulaire__encadrer__profession" for="profession">Profession :</label>
+                <input type="text" id="profession" name="profession"><br>
+
+                <label class="formulaire__encadrer__entreprise" for="entreprise">Entreprise :</label>
+                <input type="text" id="entreprise" name="entreprise"><br>
+            </fieldset>
+            <fieldset class="cadre__site-web">
+
+                <label for="site_web">Site web :</label>
+                <input type="url" id="site_web" name="site_web"><br>
+
+                <label for="linkedin">Profil LinkedIn :</label>
+                <input type="url" id="linkedin" name="linkedin"><br>
+
+                <label for="twitter">Profil Twitter :</label>
+                <input type="url" id="twitter" name="twitter"><br>
+
+                <label for="facebook">Profil Facebook :</label>
+                <input type="url" id="facebook" name="facebook"><br>
+
+                <label for="instagram">Profil Instagram :</label>
+                <input type="url" id="instagram" name="instagram"><br>
+
+                <label for="github">Profil GitHub :</label>
+                <input type="url" id="github" name="github"><br>
+
+                <input type="submit" value="Envoyer">
+            </fieldset>
+        </fieldset>
+    </form>
+</main>
+
+<%- include('partials/footer') %>

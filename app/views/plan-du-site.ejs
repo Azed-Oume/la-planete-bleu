@@ -1,23 +1,27 @@
 <%- include('partials/header') %>
 
 <main>
-    <h2>Plan du site</h2>
-    <nav>
-        <ol>
-            <li><a href="./index.html">Accueil</a></li>
-            <li><a href="./a-propos.html">À propos</a></li>
-            <li><a href="./nos-services.html">Services</a>
-                <ul>
-                    <li><a href="./nos-services.html">Service 1</a></li>
-                    <li><a href="./nos-services.html">Service 2</a></li>
-                    <li><a href="./nos-services.html">Service 3</a></li>
-                </ul>
-            </li>
-            <li><a href="./les-promos.html">Les Promos</a></li>
-            <li><a href="./mon-compte.html">Mon compte</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ol>
-    </nav>
+    <div class="plan__du__site">
+        <h2 class="title">Plan du site</h2>
+        <nav>
+            <ol class="list">
+                <li class="list__li"><a href="./index.html">Accueil</a></li>
+                <li class="list__li"><a href="./a-propos.html">À propos</a></li>
+                <li class="list__2">
+                    <a href="./nos-services.html">Services</a>
+                    <ol> <!-- La deuxième liste est contenue dans un élément <li> -->
+                        <li class="list__li"><a href="./nos-services.html">Service 1</a></li>
+                        <li class="list__li"><a href="./nos-services.html">Service 2</a></li>
+                        <li class="list__li"><a href="./nos-services.html">Service 3</a></li>
+                    </ol>
+                </li>
+                <li class="list__li"><a href="./les-promos.html">Les Promos</a></li>
+                <li class="list__li"><a href="./mon-compte.html">Mon compte</a></li>
+                <li class="list__li"><a href="./contact.html">Contact</a></li>
+            </ol>
+        </nav>
+    </div>
 </main>
 
-<%- include('partials/footer') %>
+
+    <%- include('partials/footer') %>

@@ -1,27 +1,3 @@
-import Swiper from "swiper";
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    const carousel = new Swiper('.slides', {
-      slidesPerView: 3,
-      spaceBetween: 10,
-      navigation: {
-        nextEl: '.next-button',
-        prevEl: '.prev-button',
-      },
-      autoplay: {
-        delay: 3000,
-        disableOnInteraction: false,
-      },
-    });
-
-    const stopButton = document.querySelector('.stop-button');
-    stopButton.addEventListener('click', () => {
-      carousel.autoplay.stop();
-    });
-  });
-
-
 const btnMyCountElement = document.querySelector(".connection__a");
 const btnCountElement = document.querySelector(".connection__b");
 
@@ -40,21 +16,4 @@ function btnCount() {
     });
 }
 btnCount();
-
-
-
-function showdropdown() {
-    var dropdown = document.getElementById("dropdown");
-    if (dropdown.style.display === "none") {
-        dropdown.style.display = "block";
-    } else {
-        dropdown.style.display = "none";
-    }
-}
-
-document.getElementById("dropdown").addEventListener("change", function () {
-    window.location.href = this.value;
-});
-
-
 

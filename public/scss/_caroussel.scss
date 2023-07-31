@@ -3,8 +3,6 @@
   position: relative;
   border: solid green 3px;
   border-radius: 20px;
-  width: 50%;
-  margin: 0 auto;
   overflow: hidden;
 }
   .carroussel__img {
@@ -15,12 +13,8 @@
   .carroussel__img__slide {
     border: solid rgb(19, 213, 58) 4px;
     border-radius: 20px;
-    margin-right: 1rem;
-    width: 600px;
-    height: 400px;
   }
-
-
+  
   .prev,
   .next,
   .stop {
@@ -54,38 +48,57 @@
     transform: translate(50%, -50%);
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
+  @media screen and (max-width: 750px)  {
     .carroussel {
-      gap: 3rem;
+      width: 95%;
+      height: 400px;
+      margin: 0 auto;
     }
-
     .carroussel__img {
       width: 90%;
-      margin: 2rem auto;
+      height: 300px;
+      margin: 0 auto;
     }
-
     .carroussel__img__slide {
-      width: 100%;
-      height: auto;
+      margin-right: 1rem;
+      width: 80%;
+      height: 300px;
     }
   }
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 751px) and (max-width: 1400px) {
     .carroussel {
-      width: 60%;
+      width: 80%;
+      height: 500px;
+      margin: 0 auto;
     }
-
-    .carroussel {
-      gap: 3rem;
-    }
-
     .carroussel__img {
-      width: 90%;
+      width: 100%;
+      height: 400px;
       margin: 2rem auto;
     }
-
-    .carroussel__img__slide img {
+    .carroussel__img__slide {
+      margin-right: 2rem;
       width: 100%;
-      height: auto;
+      height: 400px;
     }
   }
+
+  @media screen and (min-width: 1401px) {
+    .carroussel {
+      width: 70%;
+      height: 700px;
+      margin: 0 auto;
+    }
+    .carroussel__img {
+      width: 100%;
+      height: 600px;
+      margin: 2rem auto;
+    }
+    .carroussel__img__slide img {
+      margin-right: 3rem;
+      width: 90%;
+      height: 500px;
+    }
+  }
+  

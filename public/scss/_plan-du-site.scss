@@ -6,17 +6,18 @@
     gap: 1rem;
     justify-content: center;
     align-items: center;
-    background-color: antiquewhite;
-    border: solid gray 2px;
+    background-color: rgb(255, 245, 245);
+    border: solid rgb(213, 213, 213) 2px;
     border-radius: 10px;
     text-align: center;
     color: black;
     padding: 1rem;
 }
 
+
 .title {
-    background-color: rgb(218, 214, 214);
-    border: solid rgb(250, 205, 145) 5px;
+    background-color: rgb(213, 213, 213);
+    border: solid rgb(255, 245, 245) 5px;
     border-radius: 10px;
     width: 15rem;
     height: 2rem;
@@ -25,12 +26,31 @@
     list-style-type: square;
     // padding: 1rem;
 }
+.title:hover{
+    transform: scale(1.05) translate(10px, -10px); /* Grossissement et déplacement */
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2); /* Ombre */
+    text-transform: uppercase;
+    color: rgb(5, 50, 40);
+    text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+}
+
+
+a:hover{
+    transform: scale(1.05) translate(10px, -10px); /* Grossissement et déplacement */
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2); /* Ombre */
+    text-transform: uppercase;
+    color: rgb(5, 50, 40);
+    text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+}
+
 
 .list {
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
-    border: solid gray 2px;
+    background-color: rgb(255, 245, 245);
+    border: solid rgb(213, 213, 213) 2px;
     border-radius: 10px;
     width: 20rem;
     height: auto;
@@ -43,8 +63,8 @@
 .list__2 {
     display: flex;
     flex-direction: column;
-    background-color: antiquewhite;
-    border: solid gray 2px;
+    background-color: rgb(255, 245, 245);
+    border: solid rgb(213, 213, 213) 2px;
     border-radius: 10px;
     width: 18rem;
     height: auto;
@@ -55,8 +75,8 @@
 }
 
 .list__li {
-    background-color: rgb(218, 214, 214);
-    border: solid rgb(250, 205, 145) 5px;
+    background-color: rgb(213, 213, 213);
+    border: solid rgb(255, 245, 245) 5px;
     border-radius: 10px;
     width: 15rem;
     height: 2rem;
@@ -65,20 +85,12 @@
     list-style-type: square;
     // padding: 1rem;
 }
-// .list__2 {
-//     background-color: antiquewhite;
-//     border: solid gray 2px;
-//     border-radius: 10px;
-//     width: 20rem;
-//     height: 12rem;
-// } 
-// .list__2__li {
-//     background-color: gray;
-//     border: solid antiquewhite 2px;
-//     border-radius: 10px;
-//     list-style-type: square;
-//     width: 15rem;
-//     height: 2rem;
-//     margin-bottom: 1rem;
-//     gap: 1rem
-// }
+.list__li:hover{
+    transform: scale(1.05) translate(10px, -10px); /* Grossissement et déplacement */
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2); /* Ombre */
+    text-transform: uppercase;
+    color: rgb(5, 50, 40);
+    text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+}
+

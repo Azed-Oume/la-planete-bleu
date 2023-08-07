@@ -606,7 +606,7 @@ header nav ul li a {
   }
   .carroussel__img__slide img {
     margin-right: 3rem;
-    width: 90%;
+    width: 300px;
     height: 500px;
   }
 }
@@ -618,8 +618,8 @@ header nav ul li a {
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
-  border: solid gray 2px;
+  background-color: rgb(255, 245, 245);
+  border: solid rgb(213, 213, 213) 2px;
   border-radius: 10px;
   text-align: center;
   color: black;
@@ -627,8 +627,8 @@ header nav ul li a {
 }
 
 .title {
-  background-color: rgb(218, 214, 214);
-  border: solid rgb(250, 205, 145) 5px;
+  background-color: rgb(213, 213, 213);
+  border: solid rgb(255, 245, 245) 5px;
   border-radius: 10px;
   width: 15rem;
   height: 2rem;
@@ -637,11 +637,29 @@ header nav ul li a {
   list-style-type: square;
 }
 
+.title:hover {
+  transform: scale(1.05) translate(10px, -10px); /* Grossissement et déplacement */
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2); /* Ombre */
+  text-transform: uppercase;
+  color: rgb(5, 50, 40);
+  text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
+}
+
+a:hover {
+  transform: scale(1.05) translate(10px, -10px); /* Grossissement et déplacement */
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2); /* Ombre */
+  text-transform: uppercase;
+  color: rgb(5, 50, 40);
+  text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
+}
+
 .list {
   display: flex;
   flex-direction: column;
-  background-color: antiquewhite;
-  border: solid gray 2px;
+  background-color: rgb(255, 245, 245);
+  border: solid rgb(213, 213, 213) 2px;
   border-radius: 10px;
   width: 20rem;
   height: auto;
@@ -654,8 +672,8 @@ header nav ul li a {
 .list__2 {
   display: flex;
   flex-direction: column;
-  background-color: antiquewhite;
-  border: solid gray 2px;
+  background-color: rgb(255, 245, 245);
+  border: solid rgb(213, 213, 213) 2px;
   border-radius: 10px;
   width: 18rem;
   height: auto;
@@ -666,14 +684,23 @@ header nav ul li a {
 }
 
 .list__li {
-  background-color: rgb(218, 214, 214);
-  border: solid rgb(250, 205, 145) 5px;
+  background-color: rgb(213, 213, 213);
+  border: solid rgb(255, 245, 245) 5px;
   border-radius: 10px;
   width: 15rem;
   height: 2rem;
   margin: 1rem;
   text-align: center;
   list-style-type: square;
+}
+
+.list__li:hover {
+  transform: scale(1.05) translate(10px, -10px); /* Grossissement et déplacement */
+  box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.2); /* Ombre */
+  text-transform: uppercase;
+  color: rgb(5, 50, 40);
+  text-shadow: -10px 10px 4px rgba(0, 0, 0, 0.5);
+  font-weight: bolder;
 }
 
 /*# sourceMappingURL=style.css.map */
